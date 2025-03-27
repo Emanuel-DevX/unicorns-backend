@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-100 m-22 text-l text-center">
+    <main class="bg-white shadow-xl rounded-md">
+      <div class="flex flex-wrap justify-center pt-16 px-16">
+        <p class="flex p-2 my-auto">Enter Unicorn Name:</p>
+        <input
+          type="text"
+          placeholder="Unicorn Name"
+          id="unicornName"
+          class="border border-slate-400 mx-3 rounded-md p-3"
+        />
+      </div>
+      <div class="flex flex-wrap justify-center pt-10 px-16">
+        <p class="flex p-2 my-auto">Enter Unicorn Loves:</p>
+        <input
+          type="text"
+          placeholder="Unicorn Loves"
+          id="unicornLoves"
+          class="border border-slate-400 mx-3 rounded-md p-3"
+        />
+      </div>
+      <div class="flex flex-wrap justify-center pt-10 px-16">
+        <p class="flex p-2 my-auto">Enter Unicorn Weight Greater Than:</p>
+        <input
+          type="text"
+          placeholder="Unicorn Weight"
+          id="unicornWeight"
+          class="border border-slate-400 mx-3 rounded-md p-3"
+        />
+      </div>
+      <div class="flex flex-wrap justify-center pt-5 px-16">
+        <p class="flex p-2 my-auto">Enter Unicorn Gender:</p>
+        <select
+          name="unicorngender"
+          id="unicornGender"
+          class="flex my-auto mx-3 text-white bg-blue-500 rounded-md p-1"
+        >
+          <option value="m">Male</option>
+          <option value="f">Female</option>
+        </select>
+      </div>
+      <div class="flex flex-wrap justify-center pt-5 px-16">
+        <p class="flex p-2 my-auto">Enter Unicorn Vampires Greater than:</p>
+        <input
+          type="text"
+          placeholder="Unicorn Vampires"
+          id="unicornVampires"
+          class="border border-slate-400 mx-3 rounded-md p-3"
+        />
+      </div>
+      <div class="flex flex-wrap justify-center pt-5 px-16">
+        <p class="flex p-2 my-auto">Enter Unicorn Vaccinated:</p>
+        <select
+          name="unicornvaccinated"
+          id="unicornVaccinated"
+          class="flex my-auto mx-3 text-white bg-blue-500 rounded-md p-1"
+        >
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </div>
+      <div class="flex flex-wrap justify-center py-5 px-16">
+        <p class="flex p-2 my-auto">Enter Unicorn Vampires Exist:</p>
+        <select
+          name="unicornVampiresExist"
+          id="unicornVampiresExist"
+          class="flex my-auto mx-3 text-white bg-blue-500 rounded-md p-1"
+        >
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </div>
+      <div class="flex px-12">
+        <button
+          class="bg-blue-500 text-white font-bold w-full rounded-md py-2 my-10"
+          onclick="searchButton()"
+        >
+          Search
+        </button>
+      </div>
+    </main>
+    <div class="flex flex-wrap justify-center py-5">
+      <input type="checkbox"  name="loves" value="loves" />
+      <p class="px-4">Loves</p>
+      <input type="checkbox"  name="weight" value="weight" />
+      <p class="px-4">Weight</p>
+      <input type="checkbox"  name="gender" value="gender" />
+      <p class="px-4">Gender</p>
+      <input type="checkbox"  name="vampires" value="vampires" />
+      <p class="px-4">Vampires</p>
+      <input
+        type="checkbox"
+        name="vaccinated"
+        value="vaccinated"
+      />
+      <p class="px-4">Vaccinated</p>
+      <input
+        type="checkbox"
+        name="vampiresExist"
+        value="vampiresExist"
+      />
+      <p class="px-4">Vampires Exist</p>
+    </div>
+    <div id="resultDiv" class="flex-col justify-center"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
