@@ -94,6 +94,6 @@ app.delete("/unicorns/:name", (req, res) => {
   res.send(`${unicornName} was successfully deleted.`);
 });
 
-app.listen(3344, () => {
+app.listen(8000, () => {
   console.log("Server is running on port 3344");
 });
